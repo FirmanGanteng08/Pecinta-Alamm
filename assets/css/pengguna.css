@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+aside {
+  width: 220px;
+  background-color: rgb(15, 46, 44);
+  color: white;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+aside.closed {
+  width: 0;
+}
+
+.logo {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+  
+.menu li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 20px 15px;
+}
+
+.menu li:hover {
+  background-color: rgb(39, 48, 50);
+}
+
+
+main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #FCF7ED;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#toggleBtn {
+  background-color: rgb(15, 46, 44);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.add-btn {
+  background-color: rgb(15, 46, 44);
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.status {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.status.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.edit-btn,
+.delete-btn,
+.reset-btn {
+  margin: 0 4px;
+  padding: 5px 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background-color: #f39c12;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+}
+
+.reset-btn {
+  background-color: #3498db;
+}
+
+.back-button {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: rgb(15, 46, 44);
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: rgb(39, 48, 50);
+}

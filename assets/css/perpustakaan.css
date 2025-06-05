@@ -1,0 +1,232 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Fredoka:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Navbar Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 40px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    left: 0; /* Ensure it spans the full width */
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Navbar links (anchor tags) */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+nav ul li a:hover {
+    color: rgb(180, 175, 175);
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown a.dropdown-toggle {
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 3px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(180, 175, 175);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Container for links */
+.container a {
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1em;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container a:hover {
+    background: rgb(180, 175, 175);
+}
+
+
+
+.container h2 {
+    color: black;
+}
+
+table {
+    width: 100%;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}
+
+.container {
+    margin: auto;
+    background: FCF7ED;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 30px 0;
+    -webkit-box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.containers {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 15px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(180, 175, 175);
+}
+
+/* Sosial Media */
+.socials a {
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: rgb(180, 175, 175);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}

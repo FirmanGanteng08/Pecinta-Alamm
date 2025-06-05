@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  aside {
+    width: 220px;
+    background-color: rgb(15, 46, 44);
+    color: white;
+    transition: 0.3s ease;
+    overflow: hidden;
+  }
+  
+  aside.closed {
+    width: 0;
+  }
+  
+  .logo {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+.menu {
+    list-style: none;
+    padding: 0;
+  }
+    
+.menu li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px 15px;
+}
+  
+.menu li:hover {
+    background-color: rgb(39, 48, 50);
+}
+
+main {
+    flex: 1;
+    background:  #FCF7ED;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.container.sidebar-closed main {
+    margin-left: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+#toggleBtn {
+    color: white;
+    background-color: rgb(15, 46, 44);
+    border: none;
+    padding: 10px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.profile-info {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-info h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #222;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.profile-info p {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+}
+
+.profile-info p strong {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.profile-info p span {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    color: #333;
+}
+
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(15, 46, 44);
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background-color: rgb(69, 71, 68);
+}
+
