@@ -55,8 +55,7 @@ INSERT INTO `donasi` (`id_donasi`, `id_user`, `nama`, `email`, `nominal`, `bukti
 (19, 1, 'FirmanDN', 'firman@gmail.com', 100000.00, NULL, '2025-05-19 00:34:29'),
 (21, 13, 'hikmal', 'hikmal@gmail.com', 100000.00, NULL, '2025-05-20 00:12:48'),
 (22, 13, 'hikmal', 'hikmal@gmail.com', 100000.00, NULL, '2025-05-20 03:27:13'),
-(24, 13, 'hikmal', 'hikmal@gmail.com', 100000.00, 'bukti_682bf8d85131b.jpg', '2025-05-20 03:36:56'),
-(25, 1, 'FirmanDN1', 'firman@gmail.com', 99999999.99, 'bukti_6840f1e08b5e3.png', '2025-06-05 01:24:48');
+(24, 13, 'hikmal', 'hikmal@gmail.com', 100000.00, 'bukti_682bf8d85131b.jpg', '2025-05-20 03:36:56');
 
 -- --------------------------------------------------------
 
